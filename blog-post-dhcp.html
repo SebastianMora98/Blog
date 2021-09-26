@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sebastian Mora Blog</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog Template" />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugin CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css" />
+  </head>
+
+  <body>
+    <header class="header text-center">
+      <h1 class="blog-name pt-lg-4 mb-0">
+        <a class="no-text-decoration" href="index.html">Sebastian Mora</a>
+      </h1>
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navigation" class="collapse navbar-collapse flex-column">
+          <div class="profile-section pt-3 pt-lg-0">
+            <img
+              class="profile-image mb-3 rounded-circle mx-auto"
+              src="assets/images/profile.jpg"
+              alt="image"
+            />
+
+            <div class="bio mb-3">
+              Hola, mi nombre es Sebastian. Soy estudiante de ingenieria de
+              Sistemas de la Universidad Pedagógica y Tecnológica de Colombia.
+              Aqui abajo encuentras mis redes sociales ↓↓.
+            </div>
+            <!--//bio-->
+            <ul class="social-list list-inline py-3 mx-auto">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/Jhomsebastianm"
+                  ><i class="fab fa-twitter fa-fw"></i
+                ></a>
+              </li>
+              <!-- <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a>
+              </li> -->
+              <li class="list-inline-item">
+                <a href="https://github.com/SebastianMora98"
+                  ><i class="fab fa-github-alt fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/Jhonsebastian.mo98"
+                  ><i class="fab fa-facebook fa-fw"></i
+                ></a>
+              </li>
+            </ul>
+            <!--//social-list-->
+            <hr />
+          </div>
+          <!--//profile-section-->
+
+          <ul class="navbar-nav flex-column text-start">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                ><i class="fas fa-home fa-fw me-2"></i>Inicio
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog-post.html"
+                ><i class="fas fa-bookmark fa-fw me-2"></i>Publicaciones</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"
+                ><i class="fas fa-user fa-fw me-2"></i>Acerca de mí</a
+              >
+            </li>
+          </ul>
+
+          <!-- <div class="my-2 my-md-3">
+            <a
+              class="btn btn-primary"
+              href="https://themes.3rdwavemedia.com/"
+              target="_blank"
+              >Get in Touch</a
+            >
+          </div> -->
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-wrapper">
+      <article class="blog-post px-3 py-5 p-md-5">
+        <div class="container single-col-max-width">
+          <header class="blog-post-header">
+            <h2 class="title mb-2">
+              DHCP
+            </h2>
+            <div class="meta mb-3">
+              <span class="date">Publicado hace 2 días</span
+              ><span class="time">5 minutos de lectura</span>
+            </div>
+          </header>
+
+          <div class="blog-post-body">
+            <!-- <figure class="blog-banner">
+              <a href="https://made4dev.com"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/blog/blog-post-banner.jpg"
+                  alt="image"
+              /></a>
+            </figure> -->
+
+            <p>El Protocolo de configuración dinámica de host (DHCP) es un protocolo cliente/servidor que proporciona automáticamente un host de Protocolo de Internet (IP) con su dirección IP y otra información de configuración relacionada, como la máscara de subred y la puerta de enlace predeterminada. Las RFC 2131 y 2132 definen DHCP como un estándar de Internet Engineering Task Force (IETF) basado en el Protocolo de arranque (BOOTP), un protocolo con el que DHCP comparte muchos detalles de implementación. DHCP permite a los hosts obtener la información de configuración de TCP/IP necesaria de un servidor DHCP.</p>
+            <p>Windows Server 2016 incluye el servidor DHCP, que es un rol de servidor de red opcional que puede implementar en la red para concesión de direcciones IP y otra información a los clientes DHCP. Todos Windows operativos de cliente basados en el cliente de servidor remoto incluyen el cliente DHCP como parte de TCP/IP, y el cliente DHCP está habilitado de forma predeterminada.</p>
+            
+            
+            <h3 class="mt-5 mb-3">¿Por qué usar DHCP?</h3>
+            <p>Todos los dispositivos de una red basada en TCP/IP deben tener una dirección IP de unidifusión única para acceder a la red y sus recursos. Sin DHCP, las direcciones IP de los equipos nuevos que se mueven de una subred a otra deben configurarse manualmente. Las direcciones IP de los equipos que se quitan de la red deben reclamarse manualmente.</p>
+            <p>Con DHCP, todo este proceso se automatiza y administra de forma centralizada. El servidor DHCP mantiene un grupo de direcciones IP y concesiona una dirección a cualquier cliente habilitado para DHCP cuando se inicia en la red. Dado que las direcciones IP son dinámicas (concesionadas) en lugar de estáticas (asignadas permanentemente), las direcciones que ya no están en uso se devuelven automáticamente al grupo para su reasignación.</p>
+            <p>El administrador de red establece servidores DHCP que mantienen la información de configuración de TCP/IP y proporcionan la configuración de direcciones a los clientes habilitados para DHCP en forma de una oferta de concesión. El servidor DHCP almacena la información de configuración en una base de datos que incluye:</p>
+            <ul class="mb-5">
+              <li class="mb-2">Parámetros de configuración TCP/IP válidos para todos los clientes de la red.</li>
+              <li class="mb-2">Direcciones IP válidas, mantenidas en un grupo para la asignación a clientes, así como direcciones excluidas.</li>
+              <li class="mb-2">IP reservada direcciones asociadas a clientes DHCP concretos. Esto permite la asignación coherente de una única dirección IP a un solo cliente DHCP.</li>
+              <li class="mb-2">La duración de la concesión o el período de tiempo durante el que se puede usar la dirección IP antes de que se requiera una renovación de la concesión.</li>
+            </ul>
+            <p>Un cliente habilitado para DHCP, al aceptar una oferta de concesión, recibe:</p>
+            <ul class="mb-5">
+              <li class="mb-2">Dirección IP válida para la subred a la que se conecta.</li>
+              <li class="mb-2">Opciones DHCP solicitadas, que son parámetros adicionales que un servidor DHCP está configurado para asignar a los clientes. Algunos ejemplos de opciones DHCP son Enrutador (puerta de enlace predeterminada), Servidores DNS y Nombre de dominio DNS.</li>
+            </ul>
+
+            <h3 class="mt-5 mb-3">Ventajas de DHCP</h3>
+            <p>Un cliente habilitado para DHCP, al aceptar una oferta de concesión, recibe:</p>
+            <ul class="mb-5">
+              <li class="mb-2">Configuración de dirección IP confiable. DHCP minimiza los errores de configuración causados por la configuración manual de direcciones IP, como errores tipográficos, o conflictos de direcciones causados por la asignación de una dirección IP a más de un equipo al mismo tiempo.</li>
+              <li class="mb-2">Administración de red reducida. DHCP incluye las siguientes características para reducir la administración de red:</li>
+              <li class="mb-2">
+                <ul class="mb-5">
+                  <li class="mb-2">Configuración de TCP/IP centralizada y automatizada.</li>
+                  <li class="mb-2">La capacidad de definir configuraciones TCP/IP desde una ubicación central.</li>
+                  <li class="mb-2">La capacidad de asignar un intervalo completo de valores de configuración adicionales de TCP/IP mediante opciones DHCP.</li>
+                  <li class="mb-2">El control eficaz de los cambios de dirección IP para los clientes que se deben actualizar con frecuencia, como los de los dispositivos portátiles que se mueven a diferentes ubicaciones de una red inalámbrica.</li>
+                  <li class="mb-2">El reenvío de mensajes DHCP iniciales mediante un agente de retransmisión DHCP, lo que elimina la necesidad de un servidor DHCP en cada subred.</li>
+                </ul>
+              </li>
+            </ul>
+            
+            
+
+            <!-- <h3 class="mt-5 mb-3">Typography</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <h5 class="my-3">Bullet Points:</h5>
+            <ul class="mb-5">
+              <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+              <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+              <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+            </ul>
+            <ol class="mb-5">
+              <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+              <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+              <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+            </ol> -->
+
+          <nav class="blog-nav nav nav-justified my-5">
+            <a class="nav-link-prev nav-item nav-link rounded-left" href="#"
+              >Anterior<i class="arrow-prev fas fa-long-arrow-alt-left"></i
+            ></a>
+            <a class="nav-link-next nav-item nav-link rounded-right" href="#"
+              >Siguiente<i class="arrow-next fas fa-long-arrow-alt-right"></i
+            ></a>
+          </nav>
+        </div>
+        <!--//container-->
+      </article>
+
+      <!--//promo-section-->
+
+      <!-- <footer class="footer text-center py-2 theme-bg-dark">
+       
+        <small class="copyright"
+          >Designed with <i class="fas fa-heart" style="color: #fb866a"></i> by
+          <a href="https://themes.3rdwavemedia.com" target="_blank"
+            >Xiaoying Riley</a
+          >
+          for developers</small
+        >
+      </footer> -->
+    </div>
+    <!--//main-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/blog.js"></script>
+  </body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sebastian Mora Blog</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog Template" />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugin CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css" />
+  </head>
+
+  <body>
+    <header class="header text-center">
+      <h1 class="blog-name pt-lg-4 mb-0">
+        <a class="no-text-decoration" href="index.html">Sebastian Mora</a>
+      </h1>
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navigation" class="collapse navbar-collapse flex-column">
+          <div class="profile-section pt-3 pt-lg-0">
+            <img
+              class="profile-image mb-3 rounded-circle mx-auto"
+              src="assets/images/profile.jpg"
+              alt="image"
+            />
+
+            <div class="bio mb-3">
+              Hola, mi nombre es Sebastian. Soy estudiante de ingenieria de
+              Sistemas de la Universidad Pedagógica y Tecnológica de Colombia.
+              Aqui abajo encuentras mis redes sociales ↓↓.
+            </div>
+            <!--//bio-->
+            <ul class="social-list list-inline py-3 mx-auto">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/Jhomsebastianm"
+                  ><i class="fab fa-twitter fa-fw"></i
+                ></a>
+              </li>
+              <!-- <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a>
+              </li> -->
+              <li class="list-inline-item">
+                <a href="https://github.com/SebastianMora98"
+                  ><i class="fab fa-github-alt fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/Jhonsebastian.mo98"
+                  ><i class="fab fa-facebook fa-fw"></i
+                ></a>
+              </li>
+            </ul>
+            <!--//social-list-->
+            <hr />
+          </div>
+          <!--//profile-section-->
+
+          <ul class="navbar-nav flex-column text-start">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                ><i class="fas fa-home fa-fw me-2"></i>Inicio
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog-post.html"
+                ><i class="fas fa-bookmark fa-fw me-2"></i>Publicaciones</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"
+                ><i class="fas fa-user fa-fw me-2"></i>Acerca de mí</a
+              >
+            </li>
+          </ul>
+
+          <!-- <div class="my-2 my-md-3">
+            <a
+              class="btn btn-primary"
+              href="https://themes.3rdwavemedia.com/"
+              target="_blank"
+              >Get in Touch</a
+            >
+          </div> -->
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-wrapper">
+      <article class="blog-post px-3 py-5 p-md-5">
+        <div class="container single-col-max-width">
+          <header class="blog-post-header">
+            <h2 class="title mb-2">
+              Servidor IIS
+            </h2>
+            <div class="meta mb-3">
+              <span class="date">Publicado hace 2 días</span
+              ><span class="time">5 minutos de lectura</span>
+            </div>
+          </header>
+
+          <div class="blog-post-body">
+            <!-- <figure class="blog-banner">
+              <a href="https://made4dev.com"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/blog/blog-post-banner.jpg"
+                  alt="image"
+              /></a>
+            </figure> -->
+
+            <h3 class="mt-5 mb-3">¿Qué es IIS?</h3>
+            <p>Son las iniciales de Internet Information Services y si bien es más conocido como servidor web en realidad son un conjuntos de servicios que transforman un sistema Microsoft Windows en un servidor capaz de ofrecer servicios Web, FTP y SMTP entre otros.</p>
+            <p>En el caso de SMTP no está pensado como un servidor de correo completo sino simplemente como herramienta a disposición de las aplicaciones web alojadas para que puedan enviar correos electrónicos diferentes destinatarios pero no recibir correo de otros proveedores ya que no incorpora los protocolos IMAP/ṔOP.</p>
+            <p>Inicialmente lanzado como un grupo de servicios orientado a internet para Windows NT 3.51 en 1995, recién al año siguiente vio la luz Active Server Pages (ASP) para Windows NT 4.0  con IIS 3.0.</p>
+            <p>Por muchos años IIS fue un CD-ROM separado del Sistema Operativo denominado Option Pack, recién con Windows  2000 se incorporó al instalador del sistema como un paquete más instalable variando las limitaciones dependiendo de la versión de Windows.</p>
+            <p>Desde 2016 es un servidor que a venido en crecimiento, las estadísticas de Netcraft lo ubican como el servidor más utilizado como servidor web con cerca de 688 millones de instalaciones seguidos por Nginx con 358 millones y Apache con 313 millones.</p>
+            <p>Sin embargo a la hora de ver la cuota total de sitios web activos en internet los números cambian y tanto Apache como Nginx superan a IIS como servidor en  sitios web más activos donde cae al 10% de los sitios.</p>
+            <p>Es apto tanto como servidor web en Internet y en Intranet, siendo en Intranet o en servidores privados donde tiene mayor cuota debido al mercado empresarial que lo utilizan para aplicaciones internas en empresas de mediana y gran escala ya que va de la mano de Visual Studio .NET muy arraigado en el sector privado empresarial.</p>
+            
+            <h3 class="mt-5 mb-3">¿Cómo maneja las peticiones el servidor IIS?</h3>
+            <p>A diferencia de Apache y Nginx que dividen la carga de trabajo en diversos subprocesos, dependiendo de la configuración incluso un subprocesos por cada request, IIS opta por el modelo de proceso único, es decir que un solo proceso maneja todas las peticiones.</p>
+            <p>También cabe decir que para determinadas operaciones especiales se delegan a subprocesos, es decir que el proceso principal hace uso de subproceso sin embargo sólo delega un parte de la responsabilidad porque es siempre el proceso principal quien recibe y responde la petición.</p>
+            <p>Una de las ventajas más importantes de IIS es el manejo de las peticiones y como estas puedes ser atendidas de manera concurrente sobre todo por la alta necesidad que tiene las aplicaciones de realizar peticiones al servidor para enviar y recibir datos, así mismo como importantes mejoras en la entrada y salida asíncrona de datos que permiten aumentar la performance de la aplicación.</p>
+            <h3 class="mt-5 mb-3">Requisitos mínimos de IIS</h3>
+            <p>Los requisitos de hardware mínimos son relativamente bajos, sin embargo hay que entender que estos requisitos son para instalar e iniciar los servicios únicamente, a la hora de utilizarlo en un servidor en producción la potencia del procesador y la cantidad de memoria depende de la cantidad de tráfico, de la cantidad de usuarios y la carga de trabajo que se espera.</p>
+            <p>Para la versión de Windows Server 2016 en cuestión del procesador el requisito mínimo es un CPU de 1,4 Ghz, algo que cumple la mayoría de los CPU modernos, luego el rendimiento aumenta al aumentar la cantidad de MHz y núcleos de CPU.</p>
+            
+            <h4 class="mt-5 mb-3">Mínimo:</h4>
+            <ul class="mb-5">
+              <li class="mb-2">Procesador de 64 bits a 1,4 GHz</li>
+              <li class="mb-2">Compatible con el conjunto de instrucciones x64</li>
+              <li class="mb-2">Admite DEP y NX</li>
+              <li class="mb-2">Admite CMPXCHG16b, LAHF/SAHF y PrefetchW</li>
+              <li class="mb-2">Admite la traducción de direcciones de segundo nivel (EPT o NPT)</li>
+            </ul>
+            <p>En lo referido a memoria si el servidor es instalado sin escritorio, es decir solo consola, la cantidad de memoria mínima requerida son 512MB mientras que con el escritorio el mínimo sube a 2GB minimo, obviamente para un servidor que soporte clientes la cantidad de memoria debe ser incrementada de acuerdo al tráfico, peticiones, usuarios y carga de trabajo esperadas.</p>
+            
+            <h4 class="mt-5 mb-3">Mínimo:</h4>
+            <ul class="mb-5">
+              <li class="mb-2">512 MB (2 GB para la opción de instalación Servidor con Experiencia de escritorio)</li>
+              <li class="mb-2">Tipo ECC (código de corrección de errores) o tecnología similar.</li>
+            </ul>
+            
+            <h3 class="mt-5 mb-3">Características del Servidor Internet Information Services</h3>
+            <p>La arquitectura  de IIS es modular para permitir una gestión ordenada y la posibilidad de agregar funciones adicionales, brinda soporte para los varios protocolos: HTTP/HTTPS, FTP/FTPS, SMTP y NNTP, prove soporte SSL para Socket Layer, adicionalmente provee múltiples alternativas de autentificación como Kerberos entre otros.</p>
+            <p>Nativamente el leguage dinamico soportado es ASP.NET sin embargo tambien es posible configurar para utilizar PHP, VBScript, Perl e incluso Java (Java Server Pages y Servlets) y prácticamente cualquier lenguaje como módulo adicional o a través de la interface CGI.</p>
+            <p>Además de los módulos para soportar lenguajes de programación y scripting IIS está formado por otros módulos como pueden ser:</p>
+
+            <ul class="mb-5">
+              <li class="mb-2">Módulos de Seguridad: se utilizan para agregar capas de seguridad  a las peticiones y proteger los datos, un ejemplo claro son los métodos de autentificación que luego pueden ser implementados en las aplicaciones para la validación de usuarios y sesiones.</li>
+              <li class="mb-2">Módulos de Contenido: se utilizan para la generación y envío de de contenido al usuarios, como pueden ser archivos estáticos o dinámico generados por aplicaciones .NET, PHP, PERL o CGI.</li>
+              <li class="mb-2">Módulos de Compresión: son módulos que permiten la compresión de contenido, existe dos módulos, uno para contenido dinámico y otro para contenido estático.</li>
+              <li class="mb-2">Módulos de almacenamiento cache: brinda soporte para cache de datos en memoria con el fin de mejorar el rendimiento de las aplicaciones reduciendo el tiempo y la latencia en tiempo de respuesta  sobre todo en aplicaciones de alto tráfico.</li>
+              <li class="mb-2">Módulos de registro y diagnóstico: es un módulo que provee diferentes herramientas como por ejemplo de registro, que permite registro de actividad web como las peticiones, a su vez también provee un monitor de solicitudes para supervisar el funcionamiento del servidor web y de las aplicaciones .</li>
+            </ul>
+
+            <h4 class="mt-5 mb-3">Versiones de IIS</h4>
+            <p>Veamos ahora las diferentes versiones de IIS que han existido:</p>
+
+            <ul class="mb-5">
+              <li class="mb-2">1.0: Windows NT 3.51 SP3</li>
+              <li class="mb-2">2.0: Windows NT 4.0</li>
+              <li class="mb-2">3.0: Windows NT 4.0 SP 3</li>
+              <li class="mb-2">4.0: Windows NT 4.0 como Option Pack en un CD independiente</li>
+              <li class="mb-2">5.0: Windows 2000</li>
+              <li class="mb-2">5.1: Windows XP Professional</li>
+              <li class="mb-2">6.0: Windows Server 2003 y Windows XP Professional x64 Edition</li>
+              <li class="mb-2">7.0: Windows Vista (Solo Business y Ultimate) y Windows Server 2008</li>
+              <li class="mb-2">7.5: Windows 7 y Windows Server 2008 R2</li>
+              <li class="mb-2">8.0: Windows 8 y Windows Server 2012</li>
+              <li class="mb-2">8.5: Windows 8.1 y Windows Server 2012 R2</li>
+              <li class="mb-2">10.0: Windows 10 y Windows Server 2016</li>
+            </ul>
+
+            
+            
+            
+
+            <!-- <h3 class="mt-5 mb-3">Typography</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <h5 class="my-3">Bullet Points:</h5>
+            <ul class="mb-5">
+              <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+              <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+              <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+            </ul>
+            <ol class="mb-5">
+              <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+              <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+              <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+            </ol> -->
+
+            <p>REFERENCIA: https://blog.infranetworking.com/servidor-iis/</p>
+
+          <nav class="blog-nav nav nav-justified my-5">
+            <a class="nav-link-prev nav-item nav-link rounded-left" href="#"
+              >Anterior<i class="arrow-prev fas fa-long-arrow-alt-left"></i
+            ></a>
+            <a class="nav-link-next nav-item nav-link rounded-right" href="#"
+              >Siguiente<i class="arrow-next fas fa-long-arrow-alt-right"></i
+            ></a>
+          </nav>
+        </div>
+        <!--//container-->
+      </article>
+
+      <!--//promo-section-->
+
+      <!-- <footer class="footer text-center py-2 theme-bg-dark">
+       
+        <small class="copyright"
+          >Designed with <i class="fas fa-heart" style="color: #fb866a"></i> by
+          <a href="https://themes.3rdwavemedia.com" target="_blank"
+            >Xiaoying Riley</a
+          >
+          for developers</small
+        >
+      </footer> -->
+    </div>
+    <!--//main-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/blog.js"></script>
+  </body>
+</html>

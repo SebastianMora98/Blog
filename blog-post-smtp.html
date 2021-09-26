@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sebastian Mora Blog</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog Template" />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugin CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css" />
+  </head>
+
+  <body>
+    <header class="header text-center">
+      <h1 class="blog-name pt-lg-4 mb-0">
+        <a class="no-text-decoration" href="index.html">Sebastian Mora</a>
+      </h1>
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navigation" class="collapse navbar-collapse flex-column">
+          <div class="profile-section pt-3 pt-lg-0">
+            <img
+              class="profile-image mb-3 rounded-circle mx-auto"
+              src="assets/images/profile.jpg"
+              alt="image"
+            />
+
+            <div class="bio mb-3">
+              Hola, mi nombre es Sebastian. Soy estudiante de ingenieria de
+              Sistemas de la Universidad Pedagógica y Tecnológica de Colombia.
+              Aqui abajo encuentras mis redes sociales ↓↓.
+            </div>
+            <!--//bio-->
+            <ul class="social-list list-inline py-3 mx-auto">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/Jhomsebastianm"
+                  ><i class="fab fa-twitter fa-fw"></i
+                ></a>
+              </li>
+              <!-- <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a>
+              </li> -->
+              <li class="list-inline-item">
+                <a href="https://github.com/SebastianMora98"
+                  ><i class="fab fa-github-alt fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/Jhonsebastian.mo98"
+                  ><i class="fab fa-facebook fa-fw"></i
+                ></a>
+              </li>
+            </ul>
+            <!--//social-list-->
+            <hr />
+          </div>
+          <!--//profile-section-->
+
+          <ul class="navbar-nav flex-column text-start">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                ><i class="fas fa-home fa-fw me-2"></i>Inicio
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog-post.html"
+                ><i class="fas fa-bookmark fa-fw me-2"></i>Publicaciones</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"
+                ><i class="fas fa-user fa-fw me-2"></i>Acerca de mí</a
+              >
+            </li>
+          </ul>
+
+          <!-- <div class="my-2 my-md-3">
+            <a
+              class="btn btn-primary"
+              href="https://themes.3rdwavemedia.com/"
+              target="_blank"
+              >Get in Touch</a
+            >
+          </div> -->
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-wrapper">
+      <article class="blog-post px-3 py-5 p-md-5">
+        <div class="container single-col-max-width">
+          <header class="blog-post-header">
+            <h2 class="title mb-2">
+              FTP
+            </h2>
+            <div class="meta mb-3">
+              <span class="date">Publicado hace 2 días</span
+              ><span class="time">5 minutos de lectura</span>
+            </div>
+          </header>
+
+          <div class="blog-post-body">
+            <!-- <figure class="blog-banner">
+              <a href="https://made4dev.com"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/blog/blog-post-banner.jpg"
+                  alt="image"
+              /></a>
+            </figure> -->
+
+            <p>SMTP. Es la sigla en inglés de “protocolo simple de transferencia de correo”. Pero, para muchos de nosotros, no es nada simple: es otro de esos términos técnicos que entendemos muy vagamente.</p>
+            <p>¿Qué es un servidor SMTP y para qué se usa? A continuación, te damos todas las claves para entender cómo funciona un servidor SMTP y cómo puedes sacar partido del servidor SMTP de un proveedor externo para manejar tus campañas de email.</p>
+
+            <h3 class="mt-5 mb-3">¿Qué significa SMTP?</h3>
+            <p>Empecemos con una definición de lo que en inglés se conoce como “Simple Mail Transfer Protocol”.</p>
+            <p>En términos humanos y comprensibles, el SMTP –Simple Mail Transfer Protocol, o protocolo simple de transferencia de correo– es un protocolo básico que permite que los emails viajen a través de internet.</p>
+            
+            <p>Es decir, es un protocolo de mensajería empleado para mandar un email de un punto A (un servidor de origen o servidor saliente>) a un punto B (un servidor de destino o servidor entrante). ¡Así de simple! No importa dónde tengas tu dirección de correo electrónico (en Yahoo, Outlook o Gmail), este procedimiento es imprescindible en cualquier proceso de envío de emails masivo y siempre es complementado por un servidor SMTP.</p>
+            
+            <h3 class="mt-5 mb-3">¿Qué es un servidor SMTP?</h3>
+
+            <p>Un servidor SMTP es un ordenador encargado de llevar a cabo el servicio SMTP, que haciendo las veces de “cartero electrónico”, permite el transporte del correo electrónico por Internet. La retransmisión SMTP funciona de forma muy sencilla a través de un proceso de autenticación: si el servidor SMTP confirma las identidades del remitente y del destinatario, el envío se realiza.</p>
+            <p>Es como una oficina de correos de la web: se encarga de recoger el email del remitente y de entregarlo en la oficina de correos local del destinatario, que es otro servidor SMTP. Para entenderlo un poquito mejor, imaginemos el recorrido que tu email normal tendría que hacer a velocidad caracol para llegar a su destino:</p>
+
+            <img src="assets/images/blog-images/smtp.png" alt="" srcset="">
+            <p>El servidor SMTP no es una invención del siglo XXI: nació en 1982, pero sigue siendo el estándar de internet más utilizado a día de hoy. Eso sí, la herramienta se ha modernizado: la autenticación de usuario no existía en la versión inicial. Hasta el año 1997, los servidores de correo reenviaban todos los emails sin analizar previamente la dirección del remitente o del destinatario. Por seguir con la metáfora de nuestro cartero, era algo así como un buzoneo indiscriminado y poco seguro.</p>
+            <h3 class="mt-5 mb-3">¿Qué significa SMTP?</h3>
+            <p>Ahora que hemos presentado el sistema global del SMTP y su finalidad, podemos entrar en detalles un poco más técnicos para entender mejor cómo funciona la retransmisión SMTP.</p>
+            <h4 class="mt-5 mb-3">Servidores de correo y protocolos de retransmisión</h3>
+            <p>Cuando se envía un email a través del protocolo de retransmisión SMTP, lo que se produce es la validación de una serie de comandos de texto (de la cadena de caracteres ASCII), que posteriormente son enviados a un servidor SMTP. Por lo general, se utilizan los puertos 25 o 587.</p>
+            <p>En este proceso no entra en juego el contenido del correo electrónico, sino que la atención del lenguaje SMTP define exclusivamente en la transmisión.</p>
+            <p>Cada vez que se envía un email mediante el protocolo SMTP, se abre una nueva sesión del servicio de retransmisión SMTP. A continuación, se llevan a cabo una serie de intercambios de información entre el cliente de email y el servidor SMTP de destino, como si de una conversación se tratara.</p>
+            <h4 class="mt-5 mb-3">Los comandos SMTP más utilizados</h3>
+            <p>La conversación se produce mediante comandos de texto muy simples. Los comandos SMTP comunes son los siguientes:</p>
+            
+            <ul class="mb-5">
+              <li class="mb-2"><b>HELO:</b> Para abrir una sesión con el servidor.</li>
+              <li class="mb-2"><b>EHLO:</b> Para abrir una sesión, en el caso de que el servidor soporte extensiones definidas en el RFC 1651.</li>
+              <li class="mb-2"><b>MAIL FROM:</b> Para indicar quien envía el mensaje.</li>
+              <li class="mb-2"><b>RCPT TO:</b>  Para indicar el destinatario del mensaje.</li>
+              <li class="mb-2"><b>DATA:</b> Para indicar el comienzo del mensaje, este finalizará cuando haya una línea únicamente con un punto.</li>
+              <li class="mb-2"><b>QUIT:</b> Para cerrar la sesión.</li>
+              <li class="mb-2"><b>RSET:</b> Aborta la transacción en curso y borra todos los registros.</li>
+              <li class="mb-2"><b>SEND:</b> Inicia una transacción en la cual el mensaje se entrega a una terminal.</li>
+              <li class="mb-2"><b>VRFY:</b> Solicita al servidor la verificación de todo un argumento.</li>
+              <li class="mb-2"><b>EXPN:</b> Solicita al servidor la confirmación del argumento.</li>
+              <li class="mb-2"><b>HELP:</b> Permite solicitar información sobre un comando.</li>    
+            </ul>
+            <img src="assets/images/blog-images/smtp-2.png" alt="" srcset="">
+            
+            <p>A continuación tenemos el ejemplo de una conversación amable entre el cliente de email y el servidor SMTP.</p>
+            
+            <ul class="mb-5">
+              <li class="mb-2">Este intercambio se inicia mediante el comando «EHLO», seguido del comando «MAIL FROM», que nos permitirá identificar al remitente.</li>
+              <li class="mb-2">En siguiente lugar se envía con el comando «RCPT» que permite al servidor identificar al destinatario y después el comando «DATA», a través del cual se envía el contenido mismo del correo electrónico.</li>
+              <li class="mb-2">Finalmente, se envía el comando «QUIT», que indica el final del intercambio y de la conversación entre el cliente de envío de correo electrónico y el servidor.</li>
+            </ul>
+
+            <p>Cada vez que se produce este proceso, el servidor SMTP enviará por email las respuestas de dichos clientes, para indicar si los comandos son válidos o no.</p>
+
+            
+            
+            
+            
+
+            <!-- <h3 class="mt-5 mb-3">Typography</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <h5 class="my-3">Bullet Points:</h5>
+            <ul class="mb-5">
+              <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+              <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+              <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+            </ul>
+            <ol class="mb-5">
+              <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+              <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+              <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+            </ol> -->
+
+            <p>REFERENCIA: https://es.mailjet.com/blog/news/servidor-smtp/</p>
+
+          <nav class="blog-nav nav nav-justified my-5">
+            <a class="nav-link-prev nav-item nav-link rounded-left" href="#"
+              >Anterior<i class="arrow-prev fas fa-long-arrow-alt-left"></i
+            ></a>
+            <a class="nav-link-next nav-item nav-link rounded-right" href="#"
+              >Siguiente<i class="arrow-next fas fa-long-arrow-alt-right"></i
+            ></a>
+          </nav>
+        </div>
+        <!--//container-->
+      </article>
+
+      <!--//promo-section-->
+
+      <!-- <footer class="footer text-center py-2 theme-bg-dark">
+       
+        <small class="copyright"
+          >Designed with <i class="fas fa-heart" style="color: #fb866a"></i> by
+          <a href="https://themes.3rdwavemedia.com" target="_blank"
+            >Xiaoying Riley</a
+          >
+          for developers</small
+        >
+      </footer> -->
+    </div>
+    <!--//main-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/blog.js"></script>
+  </body>
+</html>

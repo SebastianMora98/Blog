@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sebastian Mora Blog</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog Template" />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugin CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css" />
+  </head>
+
+  <body>
+    <header class="header text-center">
+      <h1 class="blog-name pt-lg-4 mb-0">
+        <a class="no-text-decoration" href="index.html">Sebastian Mora</a>
+      </h1>
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navigation" class="collapse navbar-collapse flex-column">
+          <div class="profile-section pt-3 pt-lg-0">
+            <img
+              class="profile-image mb-3 rounded-circle mx-auto"
+              src="assets/images/profile.jpg"
+              alt="image"
+            />
+
+            <div class="bio mb-3">
+              Hola, mi nombre es Sebastian. Soy estudiante de ingenieria de
+              Sistemas de la Universidad Pedagógica y Tecnológica de Colombia.
+              Aqui abajo encuentras mis redes sociales ↓↓.
+            </div>
+            <!--//bio-->
+            <ul class="social-list list-inline py-3 mx-auto">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/Jhomsebastianm"
+                  ><i class="fab fa-twitter fa-fw"></i
+                ></a>
+              </li>
+              <!-- <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a>
+              </li> -->
+              <li class="list-inline-item">
+                <a href="https://github.com/SebastianMora98"
+                  ><i class="fab fa-github-alt fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/Jhonsebastian.mo98"
+                  ><i class="fab fa-facebook fa-fw"></i
+                ></a>
+              </li>
+            </ul>
+            <!--//social-list-->
+            <hr />
+          </div>
+          <!--//profile-section-->
+
+          <ul class="navbar-nav flex-column text-start">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                ><i class="fas fa-home fa-fw me-2"></i>Inicio
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog-post.html"
+                ><i class="fas fa-bookmark fa-fw me-2"></i>Publicaciones</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"
+                ><i class="fas fa-user fa-fw me-2"></i>Acerca de mí</a
+              >
+            </li>
+          </ul>
+
+          <!-- <div class="my-2 my-md-3">
+            <a
+              class="btn btn-primary"
+              href="https://themes.3rdwavemedia.com/"
+              target="_blank"
+              >Get in Touch</a
+            >
+          </div> -->
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-wrapper">
+      <article class="blog-post px-3 py-5 p-md-5">
+        <div class="container single-col-max-width">
+          <header class="blog-post-header">
+            <h2 class="title mb-2">
+              DNS
+            </h2>
+            <div class="meta mb-3">
+              <span class="date">Publicado hace 2 días</span
+              ><span class="time">5 minutos de lectura</span>
+            </div>
+          </header>
+
+          <div class="blog-post-body">
+            <!-- <figure class="blog-banner">
+              <a href="https://made4dev.com"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/blog/blog-post-banner.jpg"
+                  alt="image"
+              /></a>
+            </figure> -->
+
+            <p>El DNS, o sistema de nombres de dominio, traduce los nombres de dominios aptos para lectura humana (por ejemplo, www.amazon.com) a direcciones IP aptas para lectura por parte de máquinas (por ejemplo, 192.0.2.44).</p>
+            
+            <!-- <iframe width="556" height="313" src="https://www.youtube.com/embed/e2xLV7pCOLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            
+            <h3 class="mt-5 mb-3">Conceptos básicos de DNS</h3>
+            <p>Todas los equipos con Internet, desde su teléfono inteligente o portátil a los servidores con contenido de sitios web de venta minorista masiva, se buscan y comunican entre sí mediante el uso de números. Estos números se conocen como direcciones IP. Cuando abre un navegador web y visita un sitio, no necesita recordar e introducir un número largo. En su lugar, puede introducir un nombre de dominio como ejemplo.com y aun así terminar en el lugar correcto.</p>
+            <p>Un servicio de DNS como Amazon Route 53 es un servicio distribuido globalmente que convierte los nombres legibles por las personas, como www.example.com, en las direcciones IP numéricas, como 192.0.2.1, que utilizan los equipos para conectarse entre ellos. El sistema DNS de Internet funciona como una agenda telefónica donde se administra el mapeo entre los nombres y los números. Los servidores de DNS convierten las solicitudes de nombres en direcciones IP y controlan a qué servidor se dirigirá un usuario final cuando escriba un nombre de dominio en su navegador web. Estas solicitudes se denominan consultas.</p>
+            
+            <h4 class="mt-5 mb-3">Tipos de servicios de DNS</h4>
+            
+            <p><b>DNS autoritativo:</b> un servicio de DNS autoritativo proporciona un mecanismo de actualización que los desarrolladores utilizan para administrar sus nombres DNS públicos. De esta forma, responde las consultas DNS mediante la conversión de los nombres de dominio en direcciones IP para que los equipos puedan comunicarse entre ellos. El DNS autoritativo tiene la autoridad final sobre el dominio y es responsable de brindar respuestas a servidores de DNS recurrente con la información de la dirección IP. Amazon Route 53 es un sistema de DNS autoritativo.</p>
+            <p><b>DNS recurrente:</b>  los clientes normalmente no realizan consultas directamente a los servicios de DNS autoritativo. En su lugar, generalmente se conectan con otro tipo de servicio de DNS conocido como solucionador o un servicio de DNS recurrente. Un servicio de DNS recurrente funciona como el conserje de un hotel: si bien no es dueño de los registros DNS, funciona como un intermediario que obtiene la información del DNS por usted. Si un DNS recurrente tiene una referencia de DNS en caché o almacenada durante un período de tiempo, entonces responde la consulta de DNS mediante el suministro de la información IP o la fuente. De lo contrario, pasa la consulta a uno o más servidores de DNS autoritativo para encontrar la información.</p>
+            
+            <h4 class="mt-5 mb-3">¿De qué manera un DNS dirige tráfico hacia su aplicación web?</h4>
+            <p>El siguiente diagrama ofrece un resumen de cómo los servicios de DNS recurrente o autoritativo trabajan de manera conjunta para dirigir a un usuario final a su sitio web o aplicación.</p>
+
+            <img src="assets/images/blog-images/dns.png" alt="" srcset="">
+            
+            <ol class="mb-5">
+              <li class="mb-2">Un usuario abre un navegador web, ingresa www.ejemplo.com en la barra de direcciones y pulsa Enter.</li>
+              <li class="mb-2">La solicitud de www.ejemplo.com se envía a un solucionador de DNS, que normalmente administra el proveedor de servicio de Internet del usuario (ISP), como un proveedor de Internet por cable, un proveedor de banda ancha DSL o una red corporativa.</li>
+              <li class="mb-2">El solucionador de DNS del ISP reenvía la solicitud de www.ejemplo.com a un servidor de nombres de raíz de DNS.</li>
+              <li class="mb-2">El solucionador de DNS del ISP reenvía la solicitud de www.ejemplo.com nuevamente, esta vez a uno de los servidores de nombres de TLD para dominios .com. El servidor de nombres para dominios .com responde la solicitud con los nombres de los cuatro servidores de nombres de Amazon Route 53 que están asociados con el dominio ejemplo.com.</li>
+              <li class="mb-2">El solucionador de DNS del ISP elige un servidor de nombres de Amazon Route 53 y reenvía la solicitud de www.ejemplo.com a dicho servidor.</li>
+              <li class="mb-2">El servidor de nombres de Amazon Route 53 busca en la zona hospedada de ejemplo.com el registro de www.ejemplo.com, obtiene el valor asociado, como la dirección IP del servidor web, 192.0.2.44, y devuelve la dirección IP al solucionador de DNS.</li>
+              <li class="mb-2">El solucionador de DNS del ISP finalmente consigue la dirección IP que el usuario necesita. El solucionador devuelve dicho valor al navegador web. El solucionador de DNS también almacena en caché la dirección IP de ejemplo.com por el período de tiempo que usted especifique para poder responder con mayor rapidez la próxima vez que alguien busque ejemplo.com. Para obtener más información, consulte el período de vida (TTL).</li>
+              <li class="mb-2">El navegador web envía una solicitud de www.ejemplo.com a la dirección IP que obtuvo del solucionador de DNS. Aquí es donde se encuentra su contenido, por ejemplo, un servidor web que se ejecuta en una instancia de Amazon EC2 o un bucket de Amazon S3 que está configurado como un punto de enlace de sitio web.</li>
+              <li class="mb-2">El servidor web u otro recurso en 192.0.2.44 devuelve la página web para www.ejemplo.com al navegador web y este muestra la página.</li>
+            
+            </ol>
+            
+            
+            
+
+            <!-- <h3 class="mt-5 mb-3">Typography</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <h5 class="my-3">Bullet Points:</h5>
+            <ul class="mb-5">
+              <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+              <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+              <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+            </ul>
+            <ol class="mb-5">
+              <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+              <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+              <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+            </ol> -->
+
+          <nav class="blog-nav nav nav-justified my-5">
+            <a class="nav-link-prev nav-item nav-link rounded-left" href="#"
+              >Anterior<i class="arrow-prev fas fa-long-arrow-alt-left"></i
+            ></a>
+            <a class="nav-link-next nav-item nav-link rounded-right" href="#"
+              >Siguiente<i class="arrow-next fas fa-long-arrow-alt-right"></i
+            ></a>
+          </nav>
+        </div>
+        <!--//container-->
+      </article>
+
+      <!--//promo-section-->
+
+      <!-- <footer class="footer text-center py-2 theme-bg-dark">
+       
+        <small class="copyright"
+          >Designed with <i class="fas fa-heart" style="color: #fb866a"></i> by
+          <a href="https://themes.3rdwavemedia.com" target="_blank"
+            >Xiaoying Riley</a
+          >
+          for developers</small
+        >
+      </footer> -->
+    </div>
+    <!--//main-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/blog.js"></script>
+  </body>
+</html>
