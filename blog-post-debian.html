@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sebastian Mora Blog</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog Template" />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugin CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css" />
+  </head>
+
+  <body>
+    <header class="header text-center">
+      <h1 class="blog-name pt-lg-4 mb-0">
+        <a class="no-text-decoration" href="index.html">Sebastian Mora</a>
+      </h1>
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navigation" class="collapse navbar-collapse flex-column">
+          <div class="profile-section pt-3 pt-lg-0">
+            <img
+              class="profile-image mb-3 rounded-circle mx-auto"
+              src="assets/images/profile.jpg"
+              alt="image"
+            />
+
+            <div class="bio mb-3">
+              Hola, mi nombre es Sebastian, tengo 22 años, Soy de Sogamoso,
+              Boyacá, Colombia. Actualmente estoy cursando mi último semestre de
+              ingenieria de Sistemas de la Universidad Pedagógica y Tecnológica
+              de Colombia. Me gusta el desarrollo de software y los videojuegos
+              :), Aqui abajo encuentras mis redes sociales ↓↓.
+            </div>
+            <!--//bio-->
+            <ul class="social-list list-inline py-3 mx-auto">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/Jhomsebastianm"
+                  ><i class="fab fa-twitter fa-fw"></i
+                ></a>
+              </li>
+              <!-- <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a>
+              </li> -->
+              <li class="list-inline-item">
+                <a href="https://github.com/SebastianMora98"
+                  ><i class="fab fa-github-alt fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/Jhonsebastian.mo98"
+                  ><i class="fab fa-facebook fa-fw"></i
+                ></a>
+              </li>
+            </ul>
+            <!--//social-list-->
+            <hr />
+          </div>
+          <!--//profile-section-->
+
+          <ul class="navbar-nav flex-column text-start">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                ><i class="fas fa-home fa-fw me-2"></i>Inicio
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog-post.html"
+                ><i class="fas fa-bookmark fa-fw me-2"></i>Publicaciones</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="about.html"
+                ><i class="fas fa-user fa-fw me-2"></i>Acerca de mí</a
+              >
+            </li> -->
+          </ul>
+
+          <!-- <div class="my-2 my-md-3">
+            <a
+              class="btn btn-primary"
+              href="https://themes.3rdwavemedia.com/"
+              target="_blank"
+              >Get in Touch</a
+            >
+          </div> -->
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-wrapper">
+      <article class="blog-post px-3 py-5 p-md-5">
+        <div class="container single-col-max-width">
+          <header class="blog-post-header">
+            <h2 class="title mb-2">
+              Configuración e Instalación Debian 11
+            </h2>
+            <div class="meta mb-3">
+              <span class="date">Publicado hace 2 días</span
+              ><span class="time">10 minutos de lectura</span>
+            </div>
+          </header>
+
+          <div class="blog-post-body">
+            <figure class="blog-banner">
+              <a href="https://made4dev.com"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/blog/blog-post-banner-debian.png"
+                  alt="image"
+              /></a>
+            </figure>
+            <h3 class="mt-5 mb-3">Pasos De Instalación Debian 11</h3>
+            <h5 class="my-3">Recursos utilizados:</h5>
+            <ul class="mb-5">
+              <li class="mb-2">ISO Debian 11</li>
+              <li class="mb-2"><a href="https://www.virtualbox.org/">Oracle VM VirtualBox</a> </li>
+            </ul>
+
+            <h5 class="my-3">Indice:</h5>
+
+            <ol class="mb-5">
+              <li class="mb-2"><a href="#1">1. Instalar Debian 11 en VirtualBox</a></li>
+              <li class="mb-2"><a href="#2">2. Configuración IP Estatica</a></li>
+              <li class="mb-2"><a href="#3">3. Instalación y Configuración DHCP</a></li>
+              <li class="mb-2"><a href="#4">4. Instalación y Configuración DNS (Bind9)</a></li>
+              <li class="mb-2"><a href="#5">5. Instalación y Configuración Servidor Web (Apache2)</a></li>
+              <li class="mb-2"><a href="#6">6. Instalación y Configuración Servidor Servidor FTP (vsFTP)</a></li>
+              <li class="mb-2"><a href="#7">7. Instalación y Configuración Servidor Correo (Postfix, Dovecot y ThunderBird)</a></li>
+            </ul>
+
+            <h3 id="1" class="my-3">1. Instalar Debian 11 en VirtualBox</h3>
+            <img class="img-fluid" src="assets/images/debianServer/image001.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image003.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image005.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image007.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image009.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image011.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image013.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image015.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image017.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image019.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image021.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image023.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image025.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image027.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image029.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image031.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image033.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image035.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image037.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image039.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image041.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image043.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image045.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image047.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image049.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image051.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image053.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image055.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image057.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image059.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image061.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image063.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image065.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image067.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image069.png" alt="image"/> 
+            <h3 id="2" class="my-3">2. Configuración IP Estatica</h3>
+            <img class="img-fluid" src="assets/images/debianServer/image071.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image073.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image075.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image077.png" alt="image"/> 
+            <h3 id="3" class="my-3">3. Instalación y Configuración DHCP</h3>
+            <h5 class="my-3">a. Instalación DHCP</h5>
+            <img class="img-fluid" src="assets/images/debianServer/image079.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image081.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image083.png" alt="image"/> 
+            <h5 class="my-3">b. Configuración DHCP</h5>
+            <img class="img-fluid" src="assets/images/debianServer/image085.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image087.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image089.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image091.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image093.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image095.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image097.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image099.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image101.png" alt="image"/> 
+            <h3 id="4" class="my-3">4. Instalación y Configuración DNS (Bind9)</h3>
+            <img class="img-fluid" src="assets/images/debianServer/image103.png" alt="image"/> 
+            <h5 class="my-3">a. Configuración DNS (Bind9)</h5>
+            <img class="img-fluid" src="assets/images/debianServer/image105.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image107.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image109.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image111.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image113.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image115.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image117.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image119.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image121.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image123.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image125.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image127.png" alt="image"/> 
+            <h3 id="5" class="my-3">5. Instalación y Configuración Servidor Web (Apache2)</h3>
+            <img class="img-fluid" src="assets/images/debianServer/image129.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image131.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image133.png" alt="image"/>
+            <h3 id="6" class="my-3">6. Instalación y Configuración Servidor Servidor FTP (vsFTP)</h3> 
+            <h5 class="my-3">a. Instalación Servidor Servidor FTP (vsFTP)</h5>
+            <img class="img-fluid" src="assets/images/debianServer/image135.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image137.png" alt="image"/> 
+            <h5 class="my-3">b. Configuración Servidor Servidor FTP (vsFTP)</h5>
+            <img class="img-fluid" src="assets/images/debianServer/image139.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image141.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image143.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image145.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image147.png" alt="image"/>
+            <h5 class="my-3">c. Usuario Sebastian exento del chroot</h5> 
+            <img class="img-fluid" src="assets/images/debianServer/image149.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image151.png" alt="image"/> 
+            <h5 class="my-3">d. Agregar usuario jhon (restringido chroot)</h5> 
+            <img class="img-fluid" src="assets/images/debianServer/image153.png" alt="image"/> 
+            <h5 class="my-3">e. Creando carpetas y estableciendo permisos de escritura</h5> 
+            <img class="img-fluid" src="assets/images/debianServer/image155.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image157.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image159.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image161.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image163.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image165.png" alt="image"/> 
+            <h3 id="7" class="my-3">7. Instalación y Configuración Servidor Correo (Postfix, Dovecot y ThunderBird)</h3> 
+            <h5 class="my-3">a. Instalación Postfix</h5> 
+            <img class="img-fluid" src="assets/images/debianServer/image167.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image169.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image171.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image173.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image175.png" alt="image"/> 
+            <h5 class="my-3">b. Instalación Dovecot</h5> 
+            <img class="img-fluid" src="assets/images/debianServer/image177.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image179.png" alt="image"/> 
+            <h5 class="my-3">c. Configuración Postfix</h5> 
+            <img class="img-fluid" src="assets/images/debianServer/image181.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image183.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image185.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image187.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image189.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image191.png" alt="image"/> 
+            <h5 class="my-3">d. Configuración Dovecot</h5> 
+            <img class="img-fluid" src="assets/images/debianServer/image193.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image195.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image197.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image199.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image201.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image203.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image205.png" alt="image"/> 
+            <img class="img-fluid" src="assets/images/debianServer/image207.png" alt="image"/> 
+
+            <!-- <h3 class="mt-5 mb-3">Typography</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <h5 class="my-3">Bullet Points:</h5>
+            <ul class="mb-5">
+              <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+              <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+              <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+            </ul>
+            <ol class="mb-5">
+              <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+              <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+              <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+            </ol> -->
+
+          <nav class="blog-nav nav nav-justified my-5">
+            <a class="nav-link-prev nav-item nav-link rounded-left" href="#"
+              >Anterior<i class="arrow-prev fas fa-long-arrow-alt-left"></i
+            ></a>
+            <a class="nav-link-next nav-item nav-link rounded-right" href="#"
+              >Siguiente<i class="arrow-next fas fa-long-arrow-alt-right"></i
+            ></a>
+          </nav>
+        </div>
+        <!--//container-->
+      </article>
+
+      <!--//promo-section-->
+
+      <!-- <footer class="footer text-center py-2 theme-bg-dark">
+       
+        <small class="copyright"
+          >Designed with <i class="fas fa-heart" style="color: #fb866a"></i> by
+          <a href="https://themes.3rdwavemedia.com" target="_blank"
+            >Xiaoying Riley</a
+          >
+          for developers</small
+        >
+      </footer> -->
+    </div>
+    <!--//main-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/blog.js"></script>
+  </body>
+</html>
